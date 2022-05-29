@@ -90,7 +90,9 @@ sidebar_label: Study
 [科学上网二号](https://pan.baidu.com/s/1KGRhu6jysQavtIPNeqZU1w?pwd=dcke)
 
 >无法访问Github请访问这个 
+
 >提取码: dcke 需解压并更改拓展名为exe
+
 >出现在此纯属偶然，与本人无关
 
 ## 友情链接
