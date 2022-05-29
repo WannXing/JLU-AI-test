@@ -1,6 +1,6 @@
 module.exports = {
   title: 'AI-Lab',
-  tagline: 'The tagline of my site',
+  tagline: '不要停止奔跑,值得期待的只有远方',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   // favicon: 'img/favicon.ico',
