@@ -1,5 +1,5 @@
 ---
-id: p1
+id: doc4
 title: 学习内容
 sidebar_label: Study
 ---
