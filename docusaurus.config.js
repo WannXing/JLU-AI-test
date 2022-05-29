@@ -1,18 +1,19 @@
 module.exports = {
-  title: 'AI-Lab',
+  title: 'JLU-AI-Lab',
   tagline: '不要停止奔跑,值得期待的只有远方',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   // favicon: 'img/favicon.ico',
-  favicon: 'img/icon.jpg',
+  favicon: 'img/logo-black.jpg',
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'AI-Lab',
+      title: 'JLU-AI-Lab',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        // src: 'img/logo.svg',
+        src: 'img/logo-white.jpg',
       },
       links: [
         {
@@ -76,7 +77,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} WanXing, Inc. Built with Docusaurus.`,
     },
   },
   presets: [
