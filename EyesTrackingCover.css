@@ -1,0 +1,148 @@
+*{
+    margin: 0 auto;
+}
+.cover_container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.cover_title{
+    margin-top: 200px;
+    margin-left: 200px;
+    font-family: "monospace";
+    color: white;
+    font-size: 7rem;
+
+
+}
+.EyesTracking_txt{
+    filter: drop-shadow(8px 8px 8px black);
+}
+
+.cover_button_container{
+    display: flex;
+    flex-direction: row;
+}
+
+.cover_start{
+    margin-top: 50px;
+    font-size: 2rem;
+    font-family: "monospace";
+    height: 50px;
+    width: 200px;
+    border: 0;
+    color: rgba(221, 221, 221, 0.75);
+    background: -webkit-linear-gradient(right, #3686e7, #3061c1);
+    transition: all.3s;
+    filter: none;
+
+}
+
+.cover_start:hover{
+    transform: scale(1.2);
+    filter: drop-shadow(6px 6px 6px #142053);
+    color: white;
+}
+
+.cover_setting{
+    margin-top: 50px;
+    font-size: 2rem;
+    font-family: "monospace";
+    height: 50px;
+    width: 200px;
+    color: rgb(56, 120, 226);
+    border: 2px solid rgb(56, 120, 226);
+    background-color: #152153;
+    transition: all.3s;
+    filter: none;
+}
+
+
+
+.cover_setting:hover{
+    transform: scale(1.2);
+    filter: drop-shadow(6px 6px 6px #142053);
+    color: rgb(26, 208, 255);
+    border: 2px solid rgb(26, 208, 255);
+}
+
+.main_ball{
+    margin-top: 150px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    animation:kobepower 6s linear infinite ;
+    background: linear-gradient(60deg, rgba(0, 191, 255, 0.67),rgb(56, 120, 226), #152153,rgb(56, 120, 226));
+    background-size: 500%;
+    filter: blur(10px);
+}
+
+.ball{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation:kobepower 4s linear infinite ;
+    background: linear-gradient(90deg,deepskyblue,rgb(56, 120, 226), #152153,rgb(56, 120, 226),deepskyblue);
+    background-size: 500%;
+    filter: blur(10px);
+    z-index: -1;
+}
+.ball1{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    z-index: -1;
+}
+
+.ball2{
+    width: 30px;
+    height: 30px;
+    margin-top: 100px;
+    margin-left: 150px;
+    animation:kobepower1 4s linear infinite ;
+    background: linear-gradient(90deg,rgb(56, 120, 226), #152153);
+}
+
+.ball4{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    animation:kobepower1 4s linear infinite ;
+    background: linear-gradient(90deg, #152153,rgb(56, 120, 226));
+
+}
+
+.ball5{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    animation:kobepower1 4s linear infinite ;
+    background: linear-gradient(90deg,rgb(56, 120, 226), #152153);
+}
+
+@keyframes kobepower {
+    0%{
+        background-position: 0%;
+    }
+
+    100%{
+        background-position: 100%;
+    }
+}
+
+
+@keyframes kobepower1 {
+    0%{
+        background-position: 100%;
+    }
+
+    100%{
+        background-position: 0%;
+    }
+}
