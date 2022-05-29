@@ -4,7 +4,7 @@ module.exports = {
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   // favicon: 'img/favicon.ico',
-  favicon: 'img/logo-black.jpg',
+  favicon: 'img/logo-go.jpg',
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
@@ -77,7 +77,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} WanXing, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} WanXing. Built with Docusaurus.`,
     },
   },
   presets: [
