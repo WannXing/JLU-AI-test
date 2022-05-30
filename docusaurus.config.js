@@ -1,15 +1,15 @@
 module.exports = {
-  //添加百度统计
-  scripts: [[ `
-  var _hmt = _hmt || [];
-  (function() {
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?158a1727bfaa490141e18dbfba084cf9";
-    var s = document.getElementsByTagName("script")[0]; 
-    s.parentNode.insertBefore(hm, s);
-  })();
-    `
-  ]],
+  // //添加百度统计
+  // scripts: [[ `
+  // var _hmt = _hmt || [];
+  // (function() {
+  //   var hm = document.createElement("script");
+  //   hm.src = "https://hm.baidu.com/hm.js?158a1727bfaa490141e18dbfba084cf9";
+  //   var s = document.getElementsByTagName("script")[0]; 
+  //   s.parentNode.insertBefore(hm, s);
+  // })();
+  //   `
+  // ]],
 
   title: 'JLU-AI-Lab',
   tagline: '不要停止奔跑,值得期待的只有远方',
