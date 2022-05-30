@@ -10,18 +10,18 @@ sidebar_label: ros安装
 ![](https://s3.bmp.ovh/imgs/2022/05/30/6cc7e9e6ad64c54e.png)
 
 切换为中科大源（或清华源），如下图所示
-![](https://s3.bmp.ovh/imgs/2022/05/30/524fd153a6782619.png)
+![](https://s3.bmp.ovh/imgs/2022/05/30/5732a8f5e83ed000.png)
 
 ### 2. 勾选下载源
 依次勾选前四个选项，如下图所示
 ![](https://s3.bmp.ovh/imgs/2022/05/30/8b8470b1823f5446.png)
 
 ## 安装ros准备工作
-1. 添加sources.list
+1.添加sources.list
    
     sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 
-2. 添加密钥
+2.添加密钥
    
     sudo apt install curl
     curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
@@ -31,7 +31,7 @@ sidebar_label: ros安装
     wget https://download.docker.com/linux/ubuntu/gpg
     sudo apt-key add gpg
 
-3. 更新索引
+3.更新索引
    
     sudo apt update
 
@@ -46,12 +46,12 @@ sidebar_label: ros安装
 
 ## ROS配置
 
-1. 写入环境变量
+1.写入环境变量
 
     echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
     source ~/.bashrc
 
-2. init初始化
+2.init初始化
    
 >使用小鱼rosdepc初始化
 
