@@ -1,13 +1,17 @@
 module.exports = {
   //添加百度统计
-  head:[[ 'script', {},`
+  scripts: [[ `
     var _hmt = _hmt || [];
     (function() {
     var hm = document.createElement("script");
     hm.src = "https://hm.baidu.com/hm.js?158a1727bfaa490141e18dbfba084cf9";
     var s = document.getElementsByTagName("script")[0]; 
     s.parentNode.insertBefore(hm, s);})();
-    `
+    `,
+    {
+      src: 'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js',
+      async: true,
+    },
   ]],
 
   title: 'JLU-AI-Lab',
