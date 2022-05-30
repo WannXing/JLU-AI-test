@@ -1,81 +1,97 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import AppItem from './addItem'
-import TodoItem from "./todoItem";
-import './css/index.css'
-import About from './about'
-import {BrowserRouter as Router,Route,Link} from 'react-router-dom'
-let TODO_KEY="todos"
-class TodoComponent extends React.Component{
-    constructor(){
-        super();
-        let data=localStorage.getItem(TODO_KEY)
-        this.state={
-            todos:JSON.parse(data)||[]
-        }
-    }
-    HandleAdd=(val)=>{
-        console.log(val);
-        const todos=this.state.todos
-        todos.push(val)
-        this.setState({
-            todos:todos,
+import classnames from 'classnames';
+import Layout from '@theme/Layout';
+import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import styles from './styles.module.css';
 
-        })
-        localStorage.setItem(TODO_KEY,JSON.stringify(todos))
-    };
-    HandleDelete=(index)=>{
-        console.log(index);
-        let todos=this.state.todos;
-        todos=todos.filter(function (val,i) {
-            return index!==i
-        });
-        this.setState({
-            todos:todos
-        })
-        localStorage.setItem(TODO_KEY,JSON.stringify(todos))
-    }
-    render(){
-        let list=this.state.todos.map( (val,index)=> {
-            return <TodoItem key={index} val={val} index={index} onDelete={this.HandleDelete}/>
+const features = [
+  {
+    title: <>Easy to Use</>,
+    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    description: (
+      <>
+        Docusaurus was designed from the ground up to be easily installed and
+        used to get your website up and running quickly.
+      </>
+    ),
+  },
+  {
+    title: <>Focus on What Matters</>,
+    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    description: (
+      <>
+        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
+        ahead and move your docs into the <code>docs</code> directory.
+      </>
+    ),
+  },
+  {
+    title: <>Powered by React</>,
+    imageUrl: 'img/undraw_docusaurus_react.svg',
+    description: (
+      <>
+        Extend or customize your website layout by reusing React. Docusaurus can
+        be extended while reusing the same header and footer.
+      </>
+    ),
+  },
+];
 
-        })
-        //console.log(list);
-        let subTiltle=null
-        let length=this.state.todos.length
-        if(length%2===0){
-            subTiltle=<p>明日复明日，明日何其多</p>
-        }else{
-            subTiltle=<p>今日事，今日毕</p>
-        }
-        return (
+function Feature({imageUrl, title, description}) {
+  const imgUrl = useBaseUrl(imageUrl);
+  return (
+    <div className={classnames('col col--4', styles.feature)}>
+      {imgUrl && (
+        <div className="text--center">
+          <img className={styles.featureImage} src={imgUrl} alt={title} />
+        </div>
+      )}
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </div>
+  );
+}
 
-            <div className='todo-list'>
-                <Link to="/about">关于我</Link>
-                <h1>记事本</h1>
-                {subTiltle}
-
-                    {
-                        length===0?<p>恭喜你，任务全部完成</p>:(<ul>{list}</ul>)
-                    }
-
-                <AppItem onInputChange={this.HandleAdd}/>
+function Home() {
+  const context = useDocusaurusContext();
+  const {siteConfig = {}} = context;
+  return (
+    <Layout
+      title={`Hello from ${siteConfig.title}`}
+      description="Description will go into a meta tag in <head />">
+      <header className={classnames('hero hero--primary', styles.heroBanner)}>
+        <div className="container">
+          <h1 className="hero__title">{siteConfig.title}</h1>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <div className={styles.buttons}>
+            <Link
+              className={classnames(
+                'button button--outline button--secondary button--lg',
+                styles.getStarted,
+              )}
+              to={useBaseUrl('docs/task1')}>
+              Get Started
+            </Link>
+          </div>
+        </div>
+      </header>
+      {/* <main>
+        {features && features.length && (
+          <section className={styles.features}>
+            <div className="container">
+              <div className="row">
+                {features.map((props, idx) => (
+                  <Feature key={idx} {...props} />
+                ))}
+              </div>
             </div>
-        )
-    }
+          </section>
+        )}
+      </main> */}
+    </Layout>
+  );
 }
 
-class App extends React.Component{
-    render(){
-        return(
-            <Router>
-                <div>
-                <Route path="/" exact={true} component={TodoComponent}/>
-                <Route path="/about" component={About}/>
-                </div>
-            </Router>
-        )
-    }
-}
-
-ReactDOM.render(<App />, document.getElementById('root'));
+export default Home;
