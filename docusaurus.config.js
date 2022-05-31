@@ -1,5 +1,5 @@
 module.exports = {
-  // //添加百度统计
+  // 添加百度统计 https://github.com/facebook/docusaurus/pull/3771
   // scripts: [[ `
   // var _hmt = _hmt || [];
   // (function() {
