@@ -1,6 +1,6 @@
 ---
 id: exam1
-title: Decision一阶段考核
+title: Group AI一阶段考核
 sidebar_label: AI-Exam
 ---
 
