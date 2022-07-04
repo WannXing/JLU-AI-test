@@ -1,7 +1,7 @@
 ---
-id: AI-Exam
-title: 一阶段考核
-sidebar_label: task list
+id: exam1
+title: Decision一阶段考核
+sidebar_label: AI-Exam
 ---
 
 <!-- # 任务 -->
