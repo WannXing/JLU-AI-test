@@ -6,6 +6,6 @@ module.exports = {
     考核: ['exam1'],
     实践:['prac1','prac2'],
     ROS教程: ['ros-install'],
-    比赛仿真: ['sim'],
+    比赛仿真: ['sim']
   },
 };
