@@ -36,4 +36,5 @@ sidebar_label: Simulation-Environment
 
 > 车位置可以实时显示，与裁判系统互联有待完善；子弹伤害有待完善
 
-<!-- <div style="text-align: right"> 2022 AI- 马骥、毛彦博、陈雅莹、何乐华敬呈  </div> -->
+<!-- <div style="text-align: right">  </div> -->
+#### 2022 AI- 马骥、毛彦博、陈雅莹、何乐华敬呈 
