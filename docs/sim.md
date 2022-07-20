@@ -1,7 +1,7 @@
 ---
 id: sim
-title: 仿真系列集
-sidebar_label: 仿真合集
+title: Simulation Environment
+sidebar_label: Simulation-Environment
 ---
 
 ## Sentry仿真（用于仿真夹击时哨岗提供的位置）
