@@ -32,4 +32,4 @@ sidebar_label: Simulation-Environment
 ## Unity仿真（用于可视化比赛及双车、有待完善）
 > 车位置可以实时显示，与裁判系统互联有待完善；子弹伤害有待完善
 
-<h3 style="text-align:right"> 2022 AI- 马骥、毛彦博、陈雅莹、何乐华敬呈 </h3>
+<div style="text-align: right"> 2022 AI- 马骥、毛彦博、陈雅莹、何乐华敬呈  </div>
