@@ -5,7 +5,7 @@ module.exports = {
     学习任务: ['task1'],
     考核: ['exam1'],
     实践:['prac1','prac2'],
+    比赛仿真: ['sim'],
     ROS教程: ['ros-install'],
-    比赛仿真: ['sim']
   },
 };
