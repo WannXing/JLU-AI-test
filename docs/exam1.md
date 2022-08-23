@@ -2,6 +2,7 @@
 id: exam1
 title: Group AI一阶段考核
 sidebar_label: AI-Exam
+authors: 19-AI-马骥、20-AI-毛彦博
 ---
 
 <!-- # 任务 -->
